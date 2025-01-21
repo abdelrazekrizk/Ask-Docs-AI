@@ -1,7 +1,14 @@
+import sys
+import os
 import streamlit as st
-from backend.cortex_search import query_cortex_search
+from backend.cortex_search import query_cortex_search # import backend modules
 from backend.mistral_integration import generate_answer
 
+
+# Add the parent directory (project root) to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Set the title of the app
 st.title("AskDocs AI: Intelligent Knowledge Assistant")
 
 # Upload documents
