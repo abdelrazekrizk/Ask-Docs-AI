@@ -10,6 +10,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # Print the current working directory
 print("Current Working Directory:", os.getcwd())
 
+# List all files and folders in the current directory
+print("Files and folders in working directory:", os.listdir(os.getcwd()))
+
 # Set the title of the app
 st.title("AskDocs AI: Intelligent Knowledge Assistant")
 
